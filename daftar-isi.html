@@ -53,9 +53,11 @@ b{font-weight:500}
 .descriptionwrapper,p.description span{}
 .creditpic,.postmeta,h3.date-header{position:relative}
 #header h1 amp-img,#header p amp-img{width:15px;height:15px;vertical-align:-3%}
-.bungkus-judulblog{background:#fff;margin:0 auto;padding:0;width:100%;height:auto;border-top:2px solid #e8554e;border-bottom:1px solid #dedede;position:fixed;top:0;left:0;z-index:10000}
+.iklan-head{display:none}
+.bungkus-judulblog{background:#fff;margin:0 auto;padding:0;width:100%;height:auto;border-top:2px solid transparent;border-bottom:1px solid #dedede;position:fixed;top:0;left:0;z-index:10000}
+.bungkus-judulblog:after{content:"";background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAM4AAAADCAIAAABUC6f5AAABbElEQVR4XoVTAW4DMQjDSfe8fWKP3yeuxYsVbqBDp6ssY5s0IlTF78+31Q8EBEM8ZEMEY7GFPQHYNIPyAoRA2pYju9vWHMEccJgAfAQLHnibkjdMMLxXAtnDJI7QS5jsGSr5t2YHRnxFCcSCwmU/S9jigNvY7GLE86hFGKXDhpjNTlmKT73zErrCTHzrf2AxfGjxDnAMYgGL3ULQBBfPYM7NCX9R4iX4/Cwr8VrCL4jwi36e3EmIqVyYwr7WB7m6QwmHtQ8ulbUJKsh2AaNRQZYbIJWt4nAv0jJUGw/VI4dBHQy7h/agfRSqzJS1EqbawT7k0zGUgMlXsG+gdnN4tiZKQsvKsvWG3BivfRggztlzxvtHUyjXwYbKM+rsIcl+qEW4vBulVVwHcTd7+qouO2cbnnlFqrJfVam+vP7D43FR95vJMZ+BHL01UK7tixEhh6maMJY0QQiGTLeiMda1m6yPILcCL/9VdSOOs383HBTkzoaYBwAAAABJRU5ErkJggg==) repeat;height:3px;position:absolute;top:-2px;left:0;right:0;z-index:9999}
 #judulblog{padding:0;margin:0;width:100%}
-#outer-wrapper{background:#fff;width:auto;text-align:left;margin:0;padding:0;border:1px solid #dedede;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;-moz-box-sizing:border-box;box-sizing:border-box}
+#outer-wrapper{background:#fff;width:auto;text-align:left;margin:10px 0 0;padding:0;border:1px solid #dedede;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;-moz-box-sizing:border-box;box-sizing:border-box}
 #outer-wrapper,.search-form{-webkit-box-sizing:border-box}
 .home-wrapper{width:100%;max-width:1100px;margin:0 auto;padding:0;-moz-box-sizing:border-box;box-sizing:border-box}
 .content-wrapper{width:100%;max-width:1100px;margin:0 auto;}
@@ -137,7 +139,6 @@ h3.date-header{margin:0}
 .clear{clear:both;display:block}
 
 p.att-javascript{font-size:150%;text-align:center}
-.iklan-head{margin:30px auto;padding:0;text-align:center;width:100%}
 .cookie-choices-info{border-bottom:1px solid #333;color:#555;z-index:1000000;background-color:#fff;border-top:1px solid #dedede;padding:3px 0;bottom:0;top:inherit}
 .cookie-choices-info .cookie-choices-text{font-size:17px;color:#666;font-family:"Helvetica Neue Light",HelveticaNeue-Light,"Helvetica Neue",Calibri,Helvetica,Arial}
 .cookie-choices-info .cookie-choices-button{background-color:#adbcc5;border-radius:5px;padding:5px 12px;text-transform:none;color:#000;transition:all .2s linear}
@@ -200,7 +201,7 @@ p.att-javascript{font-size:150%;text-align:center}
 
 #codes,#main-wrapper{word-wrap:break-word}
 #outer-wrapper,.blockquote,pre{text-align:left}
-#outer-wrapper{background:0;width:100%;margin:0;padding:0;border:none;border-radius:0}
+#outer-wrapper{background:0;width:100%;margin:10px 0 0;padding:0;border:none;border-radius:0}
 .post{background:#fff;width:100%;overflow:hidden;margin:0;padding:0 30px 30px 0;border:1px solid #dedede;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
 .judul-box{position:relative;padding:0 0 0 13%;}
 #judul-post{position:absolute;top:25%;left:50%;margin-left:-550px;padding:0;width:100%;max-width:1100px;}
@@ -228,7 +229,7 @@ h2.sharetitle{display:block;float:left;font-size:18px;margin-top:15px;font-weigh
 .sharethis a.url{text-decoration:none;display:inline-block;margin-top:5px;font-size:16px;font-weight:500;border-radius:3px;color:#333;background:#f8f8f8;border:1px solid #ccc;box-shadow:0 1px 0 rgba(0,0,0,.08);text-shadow:none;line-height:1;padding:3px 8px;transition:all .4s ease-in-out}
 .sharethis a.url:hover{color:#555;background:#fafafa;border:1px solid #999}
 .sharethis a.url:active{box-shadow:inset 0 1px 0 rgba(0,0,0,.16)}
-.banner-ataspost,.iklan-kecilatas,.iklan-komentar,.parser{text-align:center}
+.iklan-kecilatas,.iklan-komentar,.parser{text-align:center}
 
 .disqus-comments{display:none}
 
@@ -278,8 +279,13 @@ a.btn-primary,a.btn-success,a.btn-info,a.btn-warning,a.btn-danger{color:#fff}
 @media screen and (max-width:768px){.thanks_message{width:90%;margin-left:-45%;}
 }
 
-#sidebar-kanan,#sidebar-wrapper{display:none}
+#sidebar-kanan,#sidebar-wrapper,.slider1{display:none}
 .float-left{float:left;margin-right:10px}
+
+.slider1{position:fixed;bottom:0;left:0;z-index:9999}
+.slider1 label{display:block;position:absolute;top:0;right:0;font-size:18px;font-weight:bold;width:20px;height:20px;line-height:20px;text-align:center;background:#fff;border:1px solid #dedede;cursor:pointer;z-index:9999}
+.slider1 input{position:absolute;right:-999em;opacity:0}
+.slider1 input[type=checkbox]:checked+div{display:none}
 
 .contact-box{margin-top:10px}
 .contact-box svg{width:24px;height:24px;vertical-align:-6px;margin-right:5px}
@@ -297,6 +303,22 @@ a.btn-primary,a.btn-success,a.btn-info,a.btn-warning,a.btn-danger{color:#fff}
 .contact-box .bbm svg{position:absolute;top:4px;left:0}
 .contact-box amp-accordion section:not([expanded]) .show-less,.contact-box amp-accordion section[expanded] .show-more{display:none}
 .contact-box amp-accordion h5{background:none;border:none;color:#444;font-weight:500;font-size:18px;margin:0;padding:0;text-align:left;}
+
+.center{text-align:center;margin:0 auto;}
+.left{clear:left;float:left;margin-bottom:1em;margin-right:1em;text-align:center;}
+.right{clear:right;float:right;margin-bottom:1em;margin-left:1em;text-align:center;}
+.img-240,.img-300.img-400,.img-500,.img-600{width:100%;text-align:center;clear:both}
+.img-240{max-width:240px;}
+.img-300{max-width:300px;}
+.img-400{max-width:400px;}
+.img-500{max-width:500px;}
+.img-600{max-width:600px;}
+@media screen and (max-width:640px){
+.img-500.img-left,.img-500.img-right,.img-600.img-left,.img-600.img-right{clear:both;float:none;margin:1em auto;text-align:center;}
+}
+@media screen and (max-width:414px){
+.img-240.img-left,.img-240.img-right,.img-300.img-left,.img-300.img-right,.img-400.img-left,.img-400.img-right{clear:both;float:none;margin:1em auto;text-align:center;}
+}
 
 @media screen and (max-width:1024px){#header-wrapper{margin:-4px 10px 0 0;}
 .judul-box{padding:0 0 0 14%;}
